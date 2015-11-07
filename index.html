@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ejemplo IS2</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
+    <script src="javascript/angular-ui-router.js"></script>
+    <script src="javascript/App.js"></script>
+     <script>
+      new WOW().init();
+     </script>
+    </head>
+
+
+<body ng-app ='app' >
+    <h1>Ejemplo</h1>
+    
+    <div ui-view> </div>
+    <!-- We'll also add some navigation: -->
+    <p ui-view></p>
+    
+    <label>Ingrese su nombre:</label>
+    <input type="text" ng-model="yourName" placeholder="Ingresar el nombre">
+    <hr> <h1> --->> {{yourName}}</h1>
+    <hr>
+   <h1 style="
+    color:  blue;
+    text-align;
+    -webkit-center;
+">Enlaces</h1>
+    <a href="http://campus.virtualepn.edu.ec/"> 
+    <img src="http://www.saltise.ca/wp-content/uploads/2012/05/click-here-to-view-more-red-button-300x104.png">
+    </a>
+    <a target="_blank" href="http://campus.virtualepn.edu.ec/">
+    <h2 style="
+    color:  red; 
+    ">Aula Virtual</h2>
+    </a>
+    
+    <p>Lista de materias de sexto semestre
+    </p>
+    <pre>
+        Lista  de materias de Sexto   Semestre
+        </pre>
+
+    <!--Unordered list-->
+    <h2>Mis materias</h2>
+    
+    <ul>
+        <!--list Item-->
+        <li>AAL</li>
+        <li>AAp</li>
+        <li>Inteligencia de negocios</li>
+        <li>Diseño de Procesos Organizacionaless</li>
+        <li>AAp</li>
+    </ul>
+    <!--Ordered List-->
+    <ol>
+        <li>AAL</li>
+        <li>AAp</li>
+        <li>Inteligencia de negocios</li>
+        <li>Diseño de Procesos Organizacionaless</li>
+        <li>AAp</li>
+
+    </ol>
+    <h3>Tabla de Calificaciones</h3>
+    <table id="tabla1">
+        <tr>
+            <th>AAP
+            </th>
+            <th>AAL
+            </th>
+            <th>BI
+            </th>
+        </tr>
+        <tr>
+            <th>14</th>
+            <br>
+            <th> 15</th>
+            </br>
+            <th>16</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>
